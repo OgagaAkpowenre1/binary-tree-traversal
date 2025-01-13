@@ -52,7 +52,7 @@ st.title("Binary Tree Traversal Visualizer")
 st.sidebar.header("Tree Input")
 nodes = st.sidebar.text_area("Enter node values separated by commas (e.g., 1,2,3,null,null,4,5):")
 if nodes:
-    values = [None if v == "null" else int(v) for v in nodes.split(",")]
+    values = [None if v.strip() == "null" else int(v.strip()) for v in nodes.split(",")]
     root = None
     queue = []
     if values:
