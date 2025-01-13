@@ -1,4 +1,4 @@
-// Purpose: To list all the dependencies required for the project to run.
+
 graphviz==0.20.3
 
 streamlit==1.41.1
